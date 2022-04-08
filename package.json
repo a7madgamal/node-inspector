@@ -21,7 +21,7 @@
     "node-debug": "./bin/node-debug.js"
   },
   "dependencies": {
-    "async": "~0.9",
+    "async": "~3.2.2",
     "biased-opener": "~0.2.2",
     "debug": "^2.2.0",
     "express": "^4.12.3",
