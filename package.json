@@ -33,8 +33,9 @@
     "v8-debug": "~0.4.2",
     "v8-profiler": "~5.2.4",
     "which": "^1.1.1",
-    "ws": "^0.7.1",
-    "yargs": "^3.9.0"
+    "ws": "^1.1.5",
+    "yargs": "^13.2.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "mocha": "^1.21",
@@ -48,6 +49,9 @@
   "scripts": {
     "pretest": "jshint .",
     "test": "mocha",
-    "generate-front-end": "node --harmony tools/generate-front-end"
-  }
+    "generate-front-end": "node --harmony tools/generate-front-end",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
